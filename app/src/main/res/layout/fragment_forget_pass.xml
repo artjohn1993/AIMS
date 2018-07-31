@@ -1,0 +1,49 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.devpartners.aims.fragment.ForgetPassFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/emailLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_s"
+            android:theme="@style/EditTextTheme"
+            android:textColorHint="@color/colorPrimaryDark"
+            >
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/emailEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:theme="@style/EditTextTheme"
+                />
+        </android.support.design.widget.TextInputLayout>
+        <Button
+            android:id="@+id/signinButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Continue"
+            android:padding="@dimen/padding_s"
+            android:background="@drawable/color_gradient"
+            android:textColor="@color/colorWhite"
+            android:layout_marginTop="@dimen/margin_m"
+            />
+        <TextView
+            android:id="@+id/backText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Back to Sign In"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginTop="@dimen/margin_m"
+            />
+    </LinearLayout>
+
+</FrameLayout>

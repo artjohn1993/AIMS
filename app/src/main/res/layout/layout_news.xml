@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="@dimen/padding_s"
+    android:paddingBottom="@dimen/padding_m"
+    android:paddingStart="@dimen/padding_m"
+    android:paddingEnd="@dimen/padding_m"
+    android:layout_marginTop="@dimen/margin_m"
+    android:background="@color/colorWhite">
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_company_logo1"
+        />
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Sample Title"
+        app:layout_constraintStart_toEndOf="@id/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="@dimen/margin_m"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp"/>
+    <TextView
+        android:id="@+id/details"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/hiring_sample"
+        app:layout_constraintStart_toEndOf="@id/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        android:layout_marginStart="@dimen/margin_m"
+        android:textColor="@color/colorBlack"
+        android:textSize="14sp"
+        android:layout_marginTop="@dimen/margin_s"/>
+</android.support.constraint.ConstraintLayout>
