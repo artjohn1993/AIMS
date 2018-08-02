@@ -13,6 +13,7 @@ import com.example.devpartners.aims.fragment.NewsFragment
 import com.example.devpartners.aims.fragment.TestFragment
 import kotlinx.android.synthetic.main.activity_dashboard1.*
 import kotlinx.android.synthetic.main.layout_toolbar1.*
+import org.jetbrains.anko.startActivity
 
 class Dashboard1Activity : AppCompatActivity() {
 
@@ -22,8 +23,8 @@ class Dashboard1Activity : AppCompatActivity() {
         setSupportActionBar(customToolbar)
         supportActionBar?.title = ""
         changeFragment(JobVacancyFragment())
-        navigationBar.disableShiftMode()
-        navigationBar.setOnNavigationItemSelectedListener(
+        navigationBar1.disableShiftMode()
+        navigationBar1.setOnNavigationItemSelectedListener(
                 BottomNavigationView.OnNavigationItemSelectedListener { item ->
                     when (item.itemId) {
                         R.id.job -> {
@@ -43,6 +44,9 @@ class Dashboard1Activity : AppCompatActivity() {
                     }
                     true
                 })
+        profileIcon.setOnClickListener {
+            startActivity<ProfileActivity>()
+        }
     }
 
     private fun changeFragment(data : android.support.v4.app.Fragment) {

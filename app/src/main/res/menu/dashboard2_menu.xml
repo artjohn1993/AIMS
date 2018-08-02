@@ -1,26 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/job"
-        android:title="Job"
+        android:id="@+id/applicant"
+        android:title="Applicant"
         android:icon="@drawable/ic_listing"
         />
-
+    <item
+        android:id="@+id/interview"
+        android:title="Interview"
+        android:icon="@drawable/ic_interview"
+        />
+    <item
+        android:id="@+id/post"
+        android:title="Post"
+        android:icon="@drawable/ic_post"
+        />
     <item
         android:id="@+id/news"
         android:title="News"
-        android:icon="@drawable/ic_news"
+        android:icon="@drawable/ic_questionaire"
         />
-
     <item
         android:id="@+id/services"
         android:title="Services"
         android:icon="@drawable/ic_services"
-        />
-
-    <item
-        android:id="@+id/test"
-        android:title="Questionaire"
-        android:icon="@drawable/ic_questionaire"
         />
 </menu>

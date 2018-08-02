@@ -13,7 +13,7 @@
         />
 
     <android.support.design.widget.BottomNavigationView
-        android:id="@+id/navigationBar"
+        android:id="@+id/navigationBar1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:itemIconTint="@color/navigation"
@@ -30,8 +30,7 @@
         android:layout_height="0dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/navigationBar"
+        app:layout_constraintBottom_toTopOf="@id/navigationBar1"
         app:layout_constraintTop_toBottomOf="@id/importLayout"
-        >
-    </FrameLayout>
+        />
 </android.support.constraint.ConstraintLayout>

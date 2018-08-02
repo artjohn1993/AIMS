@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/padding_m">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileIcon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@mipmap/ic_launcher"
+        android:scaleType="centerCrop"
+        android:layout_marginEnd="@dimen/padding_s"
+        layout_constraintTop_toTopOf="parent"
+        layout_constraintStart_toStartOf="parent"
+        />
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sample name"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/profileIcon"
+        android:textSize="15sp"
+        android:textColor="@color/colorBlack"
+        android:layout_marginStart="@dimen/margin_m"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="June 1 2018 - 4:30 PM"
+        app:layout_constraintTop_toBottomOf="@id/name"
+        app:layout_constraintStart_toEndOf="@id/profileIcon"
+        android:textColor="@color/colorBlack"
+        android:layout_marginStart="@dimen/margin_m"
+        />
+
+</android.support.constraint.ConstraintLayout>

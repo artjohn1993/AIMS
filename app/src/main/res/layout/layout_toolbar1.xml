@@ -22,7 +22,7 @@
             />
 
         <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/profilePicture"
+            android:id="@+id/profileIcon"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:src="@mipmap/ic_launcher"

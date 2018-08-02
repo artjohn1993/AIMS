@@ -16,9 +16,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.Dashboard1Activity"
+        <activity
+            android:name=".activity.Dashboard1Activity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity android:name=".activity.Dashboard2Activity"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
-        <activity android:name=".activity.Dashboard2Activity"></activity>
+
+        <activity android:name=".activity.ProfileActivity"></activity>
     </application>
 
 </manifest>
