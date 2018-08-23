@@ -16,7 +16,7 @@ import kotlinx.android.synthetic.main.layout_toolbar1.*
 import org.jetbrains.anko.startActivity
 
 class Dashboard1Activity : AppCompatActivity() {
-
+    
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dashboard1)
